@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | Times To Trend</title>
+    <link rel="stylesheet" href="/src/stylesheets/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="bg-white text-neutral-800 antialiased selection:bg-gold selection:text-white">
+
+    <!-- ========================================== -->
+    <!-- HEADER / NAVBAR - Dropdown Mobile Menu -->
+    <!-- ========================================== -->
+    <header class="fixed w-full top-0 z-50 bg-white border-b border-gray-100 transition-all duration-300">
+        <div class="relative">
+            <!-- Main Header Bar -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                <div class="flex items-center justify-between">
+
+                    <!-- Logo - Left Aligned -->
+                    <a href="/index.html" aria-label="Home"
+                        class="text-xl sm:text-2xl font-serif font-bold tracking-wide text-neutral-900 hover:text-gold transition-colors duration-300 block">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3638.99 4577.35"
+                            class="h-8 sm:h-10 w-auto fill-current">
+                            <defs>
+                                <font font-weight="400" style="fill-rule:nonzero" font-variant="normal" id="FontID0">
+                                    <path d="M0 0z" />
+                                    <glyph
+                                        d="M198.001 105.001l97.8315 0c53.6678,0 94.0005,3.50015 120.833,10.6659 27.0012,7.16576 50.3331,19.3317 70.1685,36.167 27.0012,23.1665 47.333,51.8332 60.8336,86.331 13.5006,34.3361 20.3318,74.3342 20.3318,119.836 0,45.6638 -6.83118,85.5001 -20.3318,119.832 -13.5006,34.5015 -33.8324,63.1682 -60.8336,86.3347 -20.1663,16.8316 -44.3328,28.9976 -72.4995,36.1634 -28.1667,7.16943 -72.3341,10.6696 -132.333,10.6696l-42.0019 0 -41.9982 0 0 -506zm-116.001 -105.001l0 714.998 156.5 0c102.001,0 173.666,-5.16567 215.333,-15.3316 41.5018,-10.335 77.8343,-27.5012 109.167,-51.4986 41.3327,-31.6668 72.6686,-72.1686 94.0005,-121.667 21.3355,-49.5022 32.0014,-106.001 32.0014,-169.5 0,-63.5028 -10.6659,-119.667 -32.0014,-168.669 -21.3318,-48.9985 -52.6678,-89.5003 -94.0005,-121.498 -31.3323,-24.0011 -66.8338,-41.1673 -106.832,-51.5023 -39.8326,-10.1659 -102.001,-15.3316 -186.335,-15.3316l-31.3323 0 -156.5 0z"
+                                        unicode="D" />
+                                    <glyph
+                                        d="M81.9993 0l0 715.001 399.001 0 0 -98.9999 -283 0 0 -179 283 0 0 -102.001 -283 0 0 -231 283 0 0 -104 -399.001 0z"
+                                        unicode="E" />
+                                    <glyph d="M83.9988 0l0 715.001 116.001 0 0 -715.001 -116.001 0z" unicode="I" />
+                                    <glyph
+                                        d="M665 352.999c-1.33195,5.49947 -3.49995,20.8344 -6.33233,45.8331 -2.66708,20.8344 -5.00038,38.1688 -6.8346,51.8349 -3.00086,-16.3331 -7.1652,-32.6662 -12.4994,-48.834 -5.33416,-16.3331 -12.1656,-32.8315 -20.3321,-49.8322l-187.001 -381.002 -187.001 388.834c-7.83277,15.9993 -14.6674,31.3342 -20.3321,46.3322 -5.66795,15.0011 -10.6683,29.8338 -14.8327,44.5012 -0.333783,-15.0011 -1.50043,-30.6667 -3.66843,-47.1683 -2.16482,-16.4984 -5.33416,-33.6644 -9.4985,-51.4979l-76.6683 -352.001 -107.001 0 169.002 745 210.998 -451.166c3.16935,-6.9999 8.16655,-19.0002 14.8358,-35.5018 6.66612,-16.6637 14.6642,-37.1643 24.1659,-61.4987 6.83142,20.5006 17.665,46.5007 32.3324,78.0002 3.83373,8.50033 6.8346,15.0011 8.66563,19.4993l206.17 450.667 172.833 -745 -107.999 0 -79.0016 352.999z"
+                                        unicode="M" />
+                                    <glyph
+                                        d="M81.9999 0l0 743 454.333 -436.832c12.3351,-12.3351 24.8357,-25.5011 37.6671,-39.5017 12.666,-14.0006 26.0011,-29.8322 40.0018,-47.333l0 495.665 106.997 0 0 -743 -463.164 445.001c-12.3351,12.166 -24.3356,24.832 -35.8361,38.1671 -11.666,13.3315 -22.4973,27.3321 -32.9978,41.9982l0 -497.165 -107.001 0z"
+                                        unicode="N" />
+                                    <glyph
+                                        d="M693.998 355.998c0,36.1692 -6.66438,70.5018 -19.829,103.003 -13.1697,32.501 -32.1675,61.498 -56.8344,86.8318 -24.1693,25.1697 -52.0016,44.3368 -83.6664,57.8349 -31.8341,13.4981 -65.3355,20.3317 -100.335,20.3317 -35.1688,0 -68.6651,-6.66438 -100.499,-19.9983 -31.6648,-13.3339 -59.9999,-32.6652 -84.6668,-58.1683 -24.6669,-25.0004 -43.6647,-53.8332 -56.6651,-86.3342 -13.0004,-32.4959 -19.5006,-66.9977 -19.5006,-103.5 0,-36.1641 6.5002,-70.3325 19.5006,-102.5 13.0004,-32.1624 31.9982,-60.9952 56.6651,-86.3291 24.6669,-25.5032 52.8327,-44.8345 84.4975,-58.1683 31.5006,-13.3339 65.1662,-19.9983 100.668,-19.9983 34.8353,0 67.834,6.66438 99.3346,19.9983 31.3313,13.3339 59.6664,32.6652 84.6668,58.1683 24.6669,25.3339 43.6647,54.1666 56.8344,86.4984 13.1646,32.501 19.829,66.5001 19.829,102.331zm121 0c0,-50.8319 -9.49635,-98.8318 -28.4993,-144 -19.1671,-45.3321 -46.8302,-85.6621 -83.3329,-121.164 -36.6669,-35.5023 -78.1666,-62.6677 -124.499,-81.5014 -46.1684,-18.8337 -94.6659,-28.33 -145.334,-28.33 -51.4988,0 -100.499,9.49635 -147.335,28.4993 -46.666,19.1671 -87.8323,46.1632 -123.663,81.3321 -36.5027,35.5023 -64.1709,75.6681 -83.0046,120.667 -18.8337,44.8345 -28.33,92.9986 -28.33,144.497 0,51.1705 9.49635,99.3346 28.33,144.503 18.8337,45.3321 46.5018,85.8314 83.0046,121.667 36.4976,35.4972 77.8331,62.4984 123.996,80.9986 46.1684,18.5002 95.1687,27.8324 147.001,27.8324 51.3347,0 100.002,-9.33218 146.165,-27.8324 46.0042,-18.5002 87.3346,-45.5014 123.668,-80.9986 36.5027,-36.1692 64.1658,-77.002 83.3329,-122.334 19.003,-45.5014 28.4993,-93.332 28.4993,-143.836z"
+                                        unicode="O" />
+                                    <glyph
+                                        d="M198.001 410l21.1664 0c61.499,0 102.332,7.16576 122.498,21.5009 20.1663,14.3315 30.3359,39.6672 30.3359,76.1651 0,39.3326 -10.835,66.9993 -32.5014,83.1691 -21.6664,16.1662 -61.8336,24.1665 -120.333,24.1665l-21.1664 0 0 -205.002zm-7.00031 -90.0003l0 -319.999 -109.001 0 0 714.998 162 0c47.5021,0 84.3346,-3.16558 110.667,-9.33129 26.1666,-6.16571 48.4985,-16.3353 66.9993,-30.6668 22.1664,-17.3353 39.1672,-39.6672 51.3331,-66.9993 12.0005,-27.3358 18.0008,-57.168 18.0008,-89.8348 0,-57.168 -13.8315,-102.001 -41.4982,-134.499 -27.6667,-32.336 -68.503,-51.8332 -122.502,-58.3335l246 -325.334 -130.998 0 -237.999 319.999 -13.0006 0z"
+                                        unicode="R" />
+                                    <glyph
+                                        d="M41.0012 143.167l92.6644 42.8323c8.83411,-31.8333 25.0019,-56.1677 48.5002,-72.8314 23.333,-16.8354 53.3353,-25.1672 89.8352,-25.1672 34.6657,0 61.9977,9.66698 82.4983,28.8325 20.3353,19.1655 30.5014,44.8318 30.5014,76.9989 0,42.0026 -34.8342,79.5007 -104.668,112.335 -9.83228,4.8319 -17.3344,8.50033 -22.5001,10.6651 -78.8331,38.4994 -131.332,73.1683 -157.501,104.334 -26.1654,31.1658 -39.3323,69.1661 -39.3323,114.001 0,58.3325 19.833,105.498 59.3338,141.667 39.5008,36.1661 91.5009,54.165 155.667,54.165 52.6677,0 96.8319,-10.1661 132.334,-30.5014 35.4986,-20.3321 59.9982,-49.4984 73.6674,-87.4987l-90.6681 -46.9998c-14.3336,22.5001 -29.9991,38.9985 -47.1651,49.3331 -17.1691,10.4998 -36.8337,15.6655 -59.0001,15.6655 -31.1689,0 -56.1677,-8.16655 -74.5003,-24.4996 -18.5011,-16.1646 -27.669,-38.0004 -27.669,-65.3324 0,-43.0007 40.5021,-83.1659 121.335,-120.168 6.16703,-2.99769 10.9989,-5.33099 14.6674,-6.83142 70.6665,-32.6662 119.167,-64.4995 145.501,-95.5 26.3307,-31.1658 39.4976,-69.999 39.4976,-116.5 0,-67.6689 -21.3335,-121.5 -64.0004,-161.335 -42.6638,-39.8314 -100.332,-59.8329 -172.998,-59.8329 -60.8343,0 -110.666,13.9998 -149.668,41.9994 -38.8332,27.9996 -64.331,67.9995 -76.3313,120.168z"
+                                        unicode="S" />
+                                    <glyph
+                                        d="M312.999 616.001l0 -616.001 -116.001 0 0 616.001 -189.999 0 0 98.9999 495 0 0 -98.9999 -189 0z"
+                                        unicode="T" />
+                                </font>
+                                <style type="text/css">
+                                    @font-face {
+                                        font-family: "Futura Md BT";
+                                        font-variant: normal;
+                                        font-weight: normal;
+                                        src: url("#FontID0") format(svg)
+                                    }
+
+                                    .fnt2 {
+                                        font-weight: normal;
+                                        font-size: 767.39px;
+                                        font-family: 'Futura Md BT'
+                                    }
+
+                                    .fnt1 {
+                                        font-weight: normal;
+                                        font-size: 1070.82px;
+                                        font-family: 'Futura Md BT'
+                                    }
+
+                                    .fnt0 {
+                                        font-weight: normal;
+                                        font-size: 1238.49px;
+                                        font-family: 'Futura Md BT'
+                                    }
+                                </style>
+                            </defs>
+                            <g id="Layer_x0020_1">
+                                <g id="_2159178532000">
+                                    <path
+                                        d="M977.92 936.22c0.42,330.41 136.26,542.92 295.93,720.07 44.46,49.35 69.82,88.21 118.91,134.27 51.98,48.76 83.86,76.99 129.87,122.94 309.3,308.9 750.41,752.42 841.49,1182.02 45.01,212.26 19.66,261.02 -10.68,455.91 238.38,-188.51 395.34,-483.56 365.42,-916.48 -53.29,-770.83 -820.96,-1363.21 -1156.19,-2092.54 -76.98,-167.48 -125.19,-329.26 -107.69,-542.41 -113.91,59.89 -239.54,246.88 -317.67,385.67 -77.04,136.83 -159.63,360.39 -159.38,550.56z" />
+                                    <path
+                                        d="M1981.83 4277.32c63.49,-34.99 132.29,-137.86 171.83,-226.81 138.74,-312.02 -8.84,-667.27 -184.18,-906.35 -235.96,-321.76 -553.2,-673.53 -554.06,-1058.68 -119.44,52.71 -275.04,345.81 -290.3,540.82 -32.84,419.23 369.42,619.44 670.2,1011.56 129.17,168.39 243.22,357.21 186.5,639.46z" />
+                                </g>
+                                <text class="fnt0" y="5755.3" x="-8.67">TIMES </text>
+                                <text class="fnt1" y="7650.12" x="28.74">TREND</text>
+                                <text class="fnt2" y="6651.64" x="1347.47">TO</text>
+                            </g>
+                        </svg>
+                    </a>
+
+                    <!-- Desktop Navigation - Hidden on Mobile -->
+                    <nav class="hidden md:flex items-center gap-8 lg:gap-10" aria-label="Main navigation">
+                        <a href="/index.html"
+                            class="relative text-sm font-medium uppercase tracking-widest text-neutral-600 hover:text-gold transition-colors duration-300 group py-2">
+                            Home
+                            <span
+                                class="absolute bottom-0 left-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                        <a href="/src/pages/shop.html"
+                            class="relative text-sm font-medium uppercase tracking-widest text-gold transition-colors duration-300 group py-2">
+                            Shop
+                            <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gold"></span>
+                        </a>
+                        <a href="/src/pages/about.html"
+                            class="relative text-sm font-medium uppercase tracking-widest text-neutral-600 hover:text-gold transition-colors duration-300 group py-2">
+                            About
+                            <span
+                                class="absolute bottom-0 left-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                        <a href="/src/pages/contact.html"
+                            class="relative text-sm font-medium uppercase tracking-widest text-neutral-600 hover:text-gold transition-colors duration-300 group py-2">
+                            Contact
+                            <span
+                                class="absolute bottom-0 left-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                    </nav>
+
+                    <!-- Right Side Icons -->
+                    <div class="flex items-center gap-3 sm:gap-5">
+
+                        <!-- Search Icon - Responsive -->
+                        <button id="search-toggle-btn"
+                            class="block text-neutral-600 hover:text-gold transition-colors duration-300 p-2 hover:bg-gray-50 rounded-full"
+                            aria-label="Search" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg>
+                        </button>
+
+                        <!-- Cart Icon with Badge -->
+                        <button
+                            class="relative text-neutral-600 hover:text-gold transition-colors duration-300 p-2 hover:bg-gray-50 rounded-full"
+                            aria-label="Cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                            </svg>
+                            <span
+                                class="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-gold text-[10px] font-bold text-white">2</span>
+                        </button>
+
+                        <!-- Mobile Menu Toggle Button -->
+                        <button id="mobile-menu-btn"
+                            class="md:hidden text-neutral-800 hover:text-gold focus:outline-none p-2 hover:bg-gray-50 rounded-lg transition-colors duration-300"
+                            aria-label="Toggle menu" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- MOBILE DROPDOWN MENU - Below Header -->
+            <!-- ========================================== -->
+            <div id="mobile-menu"
+                class="absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-lg md:hidden overflow-hidden max-h-0 transition-all duration-300 ease-in-out"
+                role="navigation" aria-label="Mobile navigation">
+
+                <!-- Mobile Navigation Links -->
+                <nav class="max-w-7xl mx-auto px-4 sm:px-6 py-2">
+                    <a href="/index.html"
+                        class="block text-base font-medium uppercase tracking-widest text-neutral-800 hover:text-gold hover:bg-gray-50 transition-all duration-300 px-4 py-4 rounded-lg">
+                        Home
+                    </a>
+                    <a href="/src/pages/shop.html"
+                        class="block text-base font-medium uppercase tracking-widest text-gold hover:bg-gray-50 transition-all duration-300 px-4 py-4 rounded-lg">
+                        Shop
+                    </a>
+                    <a href="/src/pages/about.html"
+                        class="block text-base font-medium uppercase tracking-widest text-neutral-800 hover:text-gold hover:bg-gray-50 transition-all duration-300 px-4 py-4 rounded-lg">
+                        About
+                    </a>
+                    <a href="/src/pages/contact.html"
+                        class="block text-base font-medium uppercase tracking-widest text-neutral-800 hover:text-gold hover:bg-gray-50 transition-all duration-300 px-4 py-4 rounded-lg mb-2">
+                        Contact
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <div id="search-bar"
+            class="absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-lg overflow-hidden max-h-0 transition-all duration-300 ease-in-out z-40"
+            role="search" aria-label="Site search">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                <div class="relative max-w-2xl mx-auto">
+                    <span class="absolute left-4 top-1/2 -translate-y-1/2 text-neutral-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </span>
+                    <input id="search-input" type="text" placeholder="Search our collection..."
+                        class="w-full bg-gray-50 text-neutral-900 rounded-full py-3 pl-12 pr-12 border border-gray-200 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all duration-300 placeholder:text-neutral-400 text-sm tracking-wide"
+                        aria-label="Search input">
+                    <button id="search-close-btn"
+                        class="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-neutral-400 hover:text-neutral-900 transition-colors rounded-full hover:bg-gray-200"
+                        aria-label="Close search">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Shop Header -->
+    <section class="pt-32 pb-12 bg-gray-50/50">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-4xl lg:text-5xl font-serif font-bold text-neutral-900 mb-4 animate-fade-up">Shop Watches
+            </h1>
+            <p class="text-neutral-500 text-lg font-light max-w-2xl mx-auto animate-fade-up [animation-delay:100ms]">
+                Explore our premium watch collections, where precision meets timeless elegance.</p>
+        </div>
+    </section>
+
+    <!-- Filters & Sorting -->
+    <section class="border-b border-gray-100 bg-white sticky top-[73px] z-40 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <!-- Filters -->
+            <div class="flex flex-wrap justify-center gap-6">
+                <button
+                    class="text-sm uppercase tracking-widest font-semibold text-gold border-b-2 border-gold pb-1">All</button>
+                <button
+                    class="text-sm uppercase tracking-widest font-semibold text-neutral-500 hover:text-gold transition-colors pb-1 border-b-2 border-transparent hover:border-gold">Men</button>
+                <button
+                    class="text-sm uppercase tracking-widest font-semibold text-neutral-500 hover:text-gold transition-colors pb-1 border-b-2 border-transparent hover:border-gold">Women</button>
+                <button
+                    class="text-sm uppercase tracking-widest font-semibold text-neutral-500 hover:text-gold transition-colors pb-1 border-b-2 border-transparent hover:border-gold">Smart</button>
+                <button
+                    class="text-sm uppercase tracking-widest font-semibold text-neutral-500 hover:text-gold transition-colors pb-1 border-b-2 border-transparent hover:border-gold">Luxury</button>
+            </div>
+
+            <!-- Right Side Tools -->
+            <div class="flex items-center gap-6">
+                <!-- Price Range (Visual) -->
+                <div class="hidden lg:flex items-center gap-2 text-sm text-neutral-500">
+                    <span>Price:</span>
+                    <div class="w-24 h-1 bg-gray-200 rounded-full relative">
+                        <div class="absolute left-0 w-1/2 h-full bg-gold rounded-full"></div>
+                        <div
+                            class="absolute left-1/2 w-3 h-3 bg-white border-2 border-gold rounded-full top-1/2 -translate-y-1/2 shadow-sm cursor-pointer">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sort -->
+                <div class="relative group">
+                    <button
+                        class="flex items-center gap-2 text-sm uppercase tracking-widest font-semibold text-neutral-600 hover:text-gold">
+                        Sort By
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </button>
+                    <!-- Dropdown (Visual) -->
+                    <div
+                        class="absolute right-0 top-full mt-2 w-40 bg-white border border-gray-100 shadow-xl rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-right">
+                        <a href="#"
+                            class="block px-4 py-2 text-sm text-neutral-600 hover:bg-gray-50 hover:text-gold">Newest</a>
+                        <a href="#"
+                            class="block px-4 py-2 text-sm text-neutral-600 hover:bg-gray-50 hover:text-gold">Price: Low
+                            to High</a>
+                        <a href="#"
+                            class="block px-4 py-2 text-sm text-neutral-600 hover:bg-gray-50 hover:text-gold">Price:
+                            High to Low</a>
+                        <a href="#"
+                            class="block px-4 py-2 text-sm text-neutral-600 hover:bg-gray-50 hover:text-gold">Popularity</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="py-16 bg-white min-h-screen">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12">
+
+                <!-- Product 1 -->
+                <div class="group">
+                    <div
+                        class="relative bg-gray-50 rounded-2xl overflow-hidden aspect-square mb-4 transition-all duration-500 hover:shadow-xl hover:shadow-gray-200">
+                        <img src="/mens-watch.png" alt="Royal Oak Legacy"
+                            class="w-full h-full object-contain p-8 mix-blend-multiply transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-neutral-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <!-- Action Buttons Overlay -->
+                        <div
+                            class="absolute bottom-6 left-0 right-0 flex justify-center gap-3 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                            <button
+                                class="bg-white text-neutral-900 p-3 rounded-full shadow-lg hover:text-gold hover:scale-110 transition-all"
+                                aria-label="Add to cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                </svg>
+                            </button>
+                            <button
+                                class="bg-white text-neutral-900 px-6 py-3 rounded-full uppercase text-xs font-bold tracking-widest shadow-lg hover:text-gold hover:scale-105 transition-all">
+                                View
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3
+                            class="font-serif text-lg font-medium text-neutral-900 group-hover:text-gold transition-colors cursor-pointer">
+                            Royal Oak Legacy</h3>
+                        <div class="flex justify-between items-center mt-1">
+                            <p class="text-neutral-500 text-sm">Automatic</p>
+                            <span class="text-gold font-bold">$1,250</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="group">
+                    <div
+                        class="relative bg-gray-50 rounded-2xl overflow-hidden aspect-square mb-4 transition-all duration-500 hover:shadow-xl hover:shadow-gray-200">
+                        <img src="/womens-watch.png" alt="Rose Gold Elegance"
+                            class="w-full h-full object-contain p-8 mix-blend-multiply transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-neutral-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-6 left-0 right-0 flex justify-center gap-3 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                            <button
+                                class="bg-white text-neutral-900 p-3 rounded-full shadow-lg hover:text-gold hover:scale-110 transition-all"
+                                aria-label="Add to cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                </svg>
+                            </button>
+                            <button
+                                class="bg-white text-neutral-900 px-6 py-3 rounded-full uppercase text-xs font-bold tracking-widest shadow-lg hover:text-gold hover:scale-105 transition-all">
+                                View
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3
+                            class="font-serif text-lg font-medium text-neutral-900 group-hover:text-gold transition-colors cursor-pointer">
+                            Rose Gold Elegance</h3>
+                        <div class="flex justify-between items-center mt-1">
+                            <p class="text-neutral-500 text-sm">Quartz</p>
+                            <span class="text-gold font-bold">$2,800</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="group">
+                    <div
+                        class="relative bg-gray-50 rounded-2xl overflow-hidden aspect-square mb-4 transition-all duration-500 hover:shadow-xl hover:shadow-gray-200">
+                        <img src="/smart-watch.png" alt="Chronos Elite"
+                            class="w-full h-full object-contain p-8 mix-blend-multiply transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-neutral-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-6 left-0 right-0 flex justify-center gap-3 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                            <button
+                                class="bg-white text-neutral-900 p-3 rounded-full shadow-lg hover:text-gold hover:scale-110 transition-all"
+                                aria-label="Add to cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                </svg>
+                            </button>
+                            <button
+                                class="bg-white text-neutral-900 px-6 py-3 rounded-full uppercase text-xs font-bold tracking-widest shadow-lg hover:text-gold hover:scale-105 transition-all">
+                                View
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3
+                            class="font-serif text-lg font-medium text-neutral-900 group-hover:text-gold transition-colors cursor-pointer">
+                            Chronos Elite</h3>
+                        <div class="flex justify-between items-center mt-1">
+                            <p class="text-neutral-500 text-sm">Smart</p>
+                            <span class="text-gold font-bold">$450</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="group">
+                    <div
+                        class="relative bg-gray-50 rounded-2xl overflow-hidden aspect-square mb-4 transition-all duration-500 hover:shadow-xl hover:shadow-gray-200">
+                        <img src="/hero-watch.png" alt="Midnight Chrono"
+                            class="w-full h-full object-contain p-8 mix-blend-multiply transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-neutral-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-6 left-0 right-0 flex justify-center gap-3 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                            <button
+                                class="bg-white text-neutral-900 p-3 rounded-full shadow-lg hover:text-gold hover:scale-110 transition-all"
+                                aria-label="Add to cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                </svg>
+                            </button>
+                            <button
+                                class="bg-white text-neutral-900 px-6 py-3 rounded-full uppercase text-xs font-bold tracking-widest shadow-lg hover:text-gold hover:scale-105 transition-all">
+                                View
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3
+                            class="font-serif text-lg font-medium text-neutral-900 group-hover:text-gold transition-colors cursor-pointer">
+                            Midnight Chrono</h3>
+                        <div class="flex justify-between items-center mt-1">
+                            <p class="text-neutral-500 text-sm">Chronograph</p>
+                            <span class="text-gold font-bold">$950</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="group">
+                    <div
+                        class="relative bg-gray-50 rounded-2xl overflow-hidden aspect-square mb-4 transition-all duration-500 hover:shadow-xl hover:shadow-gray-200">
+                        <img src="/mens-watch.png" alt="Voyager Steel"
+                            class="w-full h-full object-contain p-8 mix-blend-multiply transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-neutral-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-6 left-0 right-0 flex justify-center gap-3 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                            <button
+                                class="bg-white text-neutral-900 p-3 rounded-full shadow-lg hover:text-gold hover:scale-110 transition-all"
+                                aria-label="Add to cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                </svg>
+                            </button>
+                            <button
+                                class="bg-white text-neutral-900 px-6 py-3 rounded-full uppercase text-xs font-bold tracking-widest shadow-lg hover:text-gold hover:scale-105 transition-all">
+                                View
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3
+                            class="font-serif text-lg font-medium text-neutral-900 group-hover:text-gold transition-colors cursor-pointer">
+                            Voyager Steel</h3>
+                        <div class="flex justify-between items-center mt-1">
+                            <p class="text-neutral-500 text-sm">Diver</p>
+                            <span class="text-gold font-bold">$890</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="group">
+                    <div
+                        class="relative bg-gray-50 rounded-2xl overflow-hidden aspect-square mb-4 transition-all duration-500 hover:shadow-xl hover:shadow-gray-200">
+                        <img src="/womens-watch.png" alt="Luna Pearl"
+                            class="w-full h-full object-contain p-8 mix-blend-multiply transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-neutral-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-6 left-0 right-0 flex justify-center gap-3 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                            <button
+                                class="bg-white text-neutral-900 p-3 rounded-full shadow-lg hover:text-gold hover:scale-110 transition-all"
+                                aria-label="Add to cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                </svg>
+                            </button>
+                            <button
+                                class="bg-white text-neutral-900 px-6 py-3 rounded-full uppercase text-xs font-bold tracking-widest shadow-lg hover:text-gold hover:scale-105 transition-all">
+                                View
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3
+                            class="font-serif text-lg font-medium text-neutral-900 group-hover:text-gold transition-colors cursor-pointer">
+                            Luna Pearl</h3>
+                        <div class="flex justify-between items-center mt-1">
+                            <p class="text-neutral-500 text-sm">Mother of Pearl</p>
+                            <span class="text-gold font-bold">$1,100</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="group">
+                    <div
+                        class="relative bg-gray-50 rounded-2xl overflow-hidden aspect-square mb-4 transition-all duration-500 hover:shadow-xl hover:shadow-gray-200">
+                        <img src="/hero-watch.png" alt="Aviator Black"
+                            class="w-full h-full object-contain p-8 mix-blend-multiply transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-neutral-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-6 left-0 right-0 flex justify-center gap-3 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                            <button
+                                class="bg-white text-neutral-900 p-3 rounded-full shadow-lg hover:text-gold hover:scale-110 transition-all"
+                                aria-label="Add to cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                </svg>
+                            </button>
+                            <button
+                                class="bg-white text-neutral-900 px-6 py-3 rounded-full uppercase text-xs font-bold tracking-widest shadow-lg hover:text-gold hover:scale-105 transition-all">
+                                View
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3
+                            class="font-serif text-lg font-medium text-neutral-900 group-hover:text-gold transition-colors cursor-pointer">
+                            Aviator Black</h3>
+                        <div class="flex justify-between items-center mt-1">
+                            <p class="text-neutral-500 text-sm">Pilot</p>
+                            <span class="text-gold font-bold">$720</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="group">
+                    <div
+                        class="relative bg-gray-50 rounded-2xl overflow-hidden aspect-square mb-4 transition-all duration-500 hover:shadow-xl hover:shadow-gray-200">
+                        <img src="/smart-watch.png" alt="Titanium Pro"
+                            class="w-full h-full object-contain p-8 mix-blend-multiply transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-neutral-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-6 left-0 right-0 flex justify-center gap-3 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                            <button
+                                class="bg-white text-neutral-900 p-3 rounded-full shadow-lg hover:text-gold hover:scale-110 transition-all"
+                                aria-label="Add to cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                </svg>
+                            </button>
+                            <button
+                                class="bg-white text-neutral-900 px-6 py-3 rounded-full uppercase text-xs font-bold tracking-widest shadow-lg hover:text-gold hover:scale-105 transition-all">
+                                View
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3
+                            class="font-serif text-lg font-medium text-neutral-900 group-hover:text-gold transition-colors cursor-pointer">
+                            Titanium Pro</h3>
+                        <div class="flex justify-between items-center mt-1">
+                            <p class="text-neutral-500 text-sm">Sport</p>
+                            <span class="text-gold font-bold">$1,550</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pagination / Load More -->
+            <div class="mt-16 text-center">
+                <button
+                    class="inline-block bg-white border border-gray-200 text-neutral-800 px-10 py-4 uppercase tracking-[0.15em] text-xs font-bold hover:bg-gold hover:text-white hover:border-gold transition-all duration-300 shadow-sm">
+                    Load More Products
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-neutral-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-6">Need Personal Advice?</h2>
+                <p class="text-neutral-500 text-lg mb-8 leading-relaxed">Our expert concierge team is available to help
+                    you find the perfect timepiece for your collection.</p>
+                <a href="/src/pages/contact.html"
+                    class="inline-block text-gold font-bold uppercase tracking-widest hover:text-neutral-900 transition-colors border-b-2 border-gold pb-1">
+                    Contact Concierge
+                </a>
+            </div>
+            <div class="relative h-64 md:h-full min-h-[300px] rounded-2xl overflow-hidden">
+                <!-- Placeholder for a lifestyle styling image -->
+                <img src="/hero-watch.png" class="absolute inset-0 w-full h-full object-cover opacity-80"
+                    style="object-position: center;">
+                <div class="absolute inset-0 bg-neutral-900/10"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a id="whatsapp-float"
+        href="https://wa.me/15551234567?text=Hello%20Times%20To%20Trend!%20I%20need%20assistance%20with..."
+        target="_blank" rel="noopener noreferrer"
+        class="fixed bottom-8 right-8 z-40 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:bg-[#20BA5A] hover:scale-110 focus:outline-none focus:ring-4 focus:ring-[#25D366]/50 transition-all duration-500 ease-out translate-y-0 opacity-100 group"
+        aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="size-8">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+        </svg>
+        <!-- Tooltip -->
+        <span
+            class="absolute right-full mr-3 bg-neutral-900 text-white px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+            Chat with us!
+        </span>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-50 border-t border-gray-200 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <!-- Brand -->
+            <div class="space-y-6">
+                <a href="/index.html" class="block group">
+                    <div class="flex flex-col items-center gap-3">
+                        <!-- Logo -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3638.99 4577.35"
+                            class="h-12 w-auto fill-neutral-900 group-hover:fill-gold transition-colors duration-300">
+                            <defs>
+                                <font font-weight="400" style="fill-rule:nonzero" font-variant="normal" id="FontID0">
+                                    <path d="M0 0z" />
+                                    <glyph
+                                        d="M198.001 105.001l97.8315 0c53.6678,0 94.0005,3.50015 120.833,10.6659 27.0012,7.16576 50.3331,19.3317 70.1685,36.167 27.0012,23.1665 47.333,51.8332 60.8336,86.331 13.5006,34.3361 20.3318,74.3342 20.3318,119.836 0,45.6638 -6.83118,85.5001 -20.3318,119.832 -13.5006,34.5015 -33.8324,63.1682 -60.8336,86.3347 -20.1663,16.8316 -44.3328,28.9976 -72.4995,36.1634 -28.1667,7.16943 -72.3341,10.6696 -132.333,10.6696l-42.0019 0 -41.9982 0 0 -506zm-116.001 -105.001l0 714.998 156.5 0c102.001,0 173.666,-5.16567 215.333,-15.3316 41.5018,-10.335 77.8343,-27.5012 109.167,-51.4986 41.3327,-31.6668 72.6686,-72.1686 94.0005,-121.667 21.3355,-49.5022 32.0014,-106.001 32.0014,-169.5 0,-63.5028 -10.6659,-119.667 -32.0014,-168.669 -21.3318,-48.9985 -52.6678,-89.5003 -94.0005,-121.498 -31.3323,-24.0011 -66.8338,-41.1673 -106.832,-51.5023 -39.8326,-10.1659 -102.001,-15.3316 -186.335,-15.3316l-31.3323 0 -156.5 0z"
+                                        unicode="D" />
+                                    <glyph
+                                        d="M81.9993 0l0 715.001 399.001 0 0 -98.9999 -283 0 0 -179 283 0 0 -102.001 -283 0 0 -231 283 0 0 -104 -399.001 0z"
+                                        unicode="E" />
+                                    <glyph d="M83.9988 0l0 715.001 116.001 0 0 -715.001 -116.001 0z" unicode="I" />
+                                    <glyph
+                                        d="M665 352.999c-1.33195,5.49947 -3.49995,20.8344 -6.33233,45.8331 -2.66708,20.8344 -5.00038,38.1688 -6.8346,51.8349 -3.00086,-16.3331 -7.1652,-32.6662 -12.4994,-48.834 -5.33416,-16.3331 -12.1656,-32.8315 -20.3321,-49.8322l-187.001 -381.002 -187.001 388.834c-7.83277,15.9993 -14.6674,31.3342 -20.3321,46.3322 -5.66795,15.0011 -10.6683,29.8338 -14.8327,44.5012 -0.333783,-15.0011 -1.50043,-30.6667 -3.66843,-47.1683 -2.16482,-16.4984 -5.33416,-33.6644 -9.4985,-51.4979l-76.6683 -352.001 -107.001 0 169.002 745 210.998 -451.166c3.16935,-6.9999 8.16655,-19.0002 14.8358,-35.5018 6.66612,-16.6637 14.6642,-37.1643 24.1659,-61.4987 6.83142,20.5006 17.665,46.5007 32.3324,78.0002 3.83373,8.50033 6.8346,15.0011 8.66563,19.4993l206.17 450.667 172.833 -745 -107.999 0 -79.0016 352.999z"
+                                        unicode="M" />
+                                    <glyph
+                                        d="M81.9999 0l0 743 454.333 -436.832c12.3351,-12.3351 24.8357,-25.5011 37.6671,-39.5017 12.666,-14.0006 26.0011,-29.8322 40.0018,-47.333l0 495.665 106.997 0 0 -743 -463.164 445.001c-12.3351,12.166 -24.3356,24.832 -35.8361,38.1671 -11.666,13.3315 -22.4973,27.3321 -32.9978,41.9982l0 -497.165 -107.001 0z"
+                                        unicode="N" />
+                                    <glyph
+                                        d="M693.998 355.998c0,36.1692 -6.66438,70.5018 -19.829,103.003 -13.1697,32.501 -32.1675,61.498 -56.8344,86.8318 -24.1693,25.1697 -52.0016,44.3368 -83.6664,57.8349 -31.8341,13.4981 -65.3355,20.3317 -100.335,20.3317 -35.1688,0 -68.6651,-6.66438 -100.499,-19.9983 -31.6648,-13.3339 -59.9999,-32.6652 -84.6668,-58.1683 -24.6669,-25.0004 -43.6647,-53.8332 -56.6651,-86.3342 -13.0004,-32.4959 -19.5006,-66.9977 -19.5006,-103.5 0,-36.1641 6.5002,-70.3325 19.5006,-102.5 13.0004,-32.1624 31.9982,-60.9952 56.6651,-86.3291 24.6669,-25.5032 52.8327,-44.8345 84.4975,-58.1683 31.5006,-13.3339 65.1662,-19.9983 100.668,-19.9983 34.8353,0 67.834,6.66438 99.3346,19.9983 31.3313,13.3339 59.6664,32.6652 84.6668,58.1683 24.6669,25.3339 43.6647,54.1666 56.8344,86.4984 13.1646,32.501 19.829,66.5001 19.829,102.331zm121 0c0,-50.8319 -9.49635,-98.8318 -28.4993,-144 -19.1671,-45.3321 -46.8302,-85.6621 -83.3329,-121.164 -36.6669,-35.5023 -78.1666,-62.6677 -124.499,-81.5014 -46.1684,-18.8337 -94.6659,-28.33 -145.334,-28.33 -51.4988,0 -100.499,9.49635 -147.335,28.4993 -46.666,19.1671 -87.8323,46.1632 -123.663,81.3321 -36.5027,35.5023 -64.1709,75.6681 -83.0046,120.667 -18.8337,44.8345 -28.33,92.9986 -28.33,144.497 0,51.1705 9.49635,99.3346 28.33,144.503 18.8337,45.3321 46.5018,85.8314 83.0046,121.667 36.4976,35.4972 77.8331,62.4984 123.996,80.9986 46.1684,18.5002 95.1687,27.8324 147.001,27.8324 51.3347,0 100.002,-9.33218 146.165,-27.8324 46.0042,-18.5002 87.3346,-45.5014 123.668,-80.9986 36.5027,-36.1692 64.1658,-77.002 83.3329,-122.334 19.003,-45.5014 28.4993,-93.332 28.4993,-143.836z"
+                                        unicode="O" />
+                                    <glyph
+                                        d="M198.001 410l21.1664 0c61.499,0 102.332,7.16576 122.498,21.5009 20.1663,14.3315 30.3359,39.6672 30.3359,76.1651 0,39.3326 -10.835,66.9993 -32.5014,83.1691 -21.6664,16.1662 -61.8336,24.1665 -120.333,24.1665l-21.1664 0 0 -205.002zm-7.00031 -90.0003l0 -319.999 -109.001 0 0 714.998 162 0c47.5021,0 84.3346,-3.16558 110.667,-9.33129 26.1666,-6.16571 48.4985,-16.3353 66.9993,-30.6668 22.1664,-17.3353 39.1672,-39.6672 51.3331,-66.9993 12.0005,-27.3358 18.0008,-57.168 18.0008,-89.8348 0,-57.168 -13.8315,-102.001 -41.4982,-134.499 -27.6667,-32.336 -68.503,-51.8332 -122.502,-58.3335l246 -325.334 -130.998 0 -237.999 319.999 -13.0006 0z"
+                                        unicode="R" />
+                                    <glyph
+                                        d="M41.0012 143.167l92.6644 42.8323c8.83411,-31.8333 25.0019,-56.1677 48.5002,-72.8314 23.333,-16.8354 53.3353,-25.1672 89.8352,-25.1672 34.6657,0 61.9977,9.66698 82.4983,28.8325 20.3353,19.1655 30.5014,44.8318 30.5014,76.9989 0,42.0026 -34.8342,79.5007 -104.668,112.335 -9.83228,4.8319 -17.3344,8.50033 -22.5001,10.6651 -78.8331,38.4994 -131.332,73.1683 -157.501,104.334 -26.1654,31.1658 -39.3323,69.1661 -39.3323,114.001 0,58.3325 19.833,105.498 59.3338,141.667 39.5008,36.1661 91.5009,54.165 155.667,54.165 52.6677,0 96.8319,-10.1661 132.334,-30.5014 35.4986,-20.3321 59.9982,-49.4984 73.6674,-87.4987l-90.6681 -46.9998c-14.3336,22.5001 -29.9991,38.9985 -47.1651,49.3331 -17.1691,10.4998 -36.8337,15.6655 -59.0001,15.6655 -31.1689,0 -56.1677,-8.16655 -74.5003,-24.4996 -18.5011,-16.1646 -27.669,-38.0004 -27.669,-65.3324 0,-43.0007 40.5021,-83.1659 121.335,-120.168 6.16703,-2.99769 10.9989,-5.33099 14.6674,-6.83142 70.6665,-32.6662 119.167,-64.4995 145.501,-95.5 26.3307,-31.1658 39.4976,-69.999 39.4976,-116.5 0,-67.6689 -21.3335,-121.5 -64.0004,-161.335 -42.6638,-39.8314 -100.332,-59.8329 -172.998,-59.8329 -60.8343,0 -110.666,13.9998 -149.668,41.9994 -38.8332,27.9996 -64.331,67.9995 -76.3313,120.168z"
+                                        unicode="S" />
+                                    <glyph
+                                        d="M312.999 616.001l0 -616.001 -116.001 0 0 616.001 -189.999 0 0 98.9999 495 0 0 -98.9999 -189 0z"
+                                        unicode="T" />
+                                </font>
+                                <style type="text/css">
+                                    @font-face {
+                                        font-family: "Futura Md BT";
+                                        font-variant: normal;
+                                        font-weight: normal;
+                                        src: url("#FontID0") format(svg)
+                                    }
+
+                                    .fnt2 {
+                                        font-weight: normal;
+                                        font-size: 767.39px;
+                                        font-family: 'Futura Md BT'
+                                    }
+
+                                    .fnt1 {
+                                        font-weight: normal;
+                                        font-size: 1070.82px;
+                                        font-family: 'Futura Md BT'
+                                    }
+
+                                    .fnt0 {
+                                        font-weight: normal;
+                                        font-size: 1238.49px;
+                                        font-family: 'Futura Md BT'
+                                    }
+                                </style>
+                            </defs>
+                            <g id="Layer_x0020_1">
+                                <g id="_2159178532000">
+                                    <path
+                                        d="M977.92 936.22c0.42,330.41 136.26,542.92 295.93,720.07 44.46,49.35 69.82,88.21 118.91,134.27 51.98,48.76 83.86,76.99 129.87,122.94 309.3,308.9 750.41,752.42 841.49,1182.02 45.01,212.26 19.66,261.02 -10.68,455.91 238.38,-188.51 395.34,-483.56 365.42,-916.48 -53.29,-770.83 -820.96,-1363.21 -1156.19,-2092.54 -76.98,-167.48 -125.19,-329.26 -107.69,-542.41 -113.91,59.89 -239.54,246.88 -317.67,385.67 -77.04,136.83 -159.63,360.39 -159.38,550.56z" />
+                                    <path
+                                        d="M1981.83 4277.32c63.49,-34.99 132.29,-137.86 171.83,-226.81 138.74,-312.02 -8.84,-667.27 -184.18,-906.35 -235.96,-321.76 -553.2,-673.53 -554.06,-1058.68 -119.44,52.71 -275.04,345.81 -290.3,540.82 -32.84,419.23 369.42,619.44 670.2,1011.56 129.17,168.39 243.22,357.21 186.5,639.46z" />
+                                </g>
+                                <text class="fnt0" y="5755.3" x="-8.67">TIMES </text>
+                                <text class="fnt1" y="7650.12" x="28.74">TREND</text>
+                                <text class="fnt2" y="6651.64" x="1347.47">TO</text>
+                            </g>
+                        </svg>
+
+                        <span
+                            class="text-2xl font-serif font-bold tracking-wide text-neutral-900 group-hover:text-gold transition-colors duration-300">
+                            Times To <span class="text-gold">Trend</span>
+                        </span>
+                    </div>
+                </a>
+                <p class="text-neutral-500 text-sm leading-relaxed">
+                    Redefining luxury with a modern touch. We bring you the finest timepieces from around the world.
+                </p>
+            </div>
+
+            <!-- Links -->
+            <div>
+                <h4 class="text-neutral-900 font-bold uppercase tracking-widest mb-6">Quick Links</h4>
+                <ul class="space-y-4 text-sm text-neutral-600">
+                    <li><a href="/index.html" class="hover:text-gold transition-colors">Home</a></li>
+                    <li><a href="/src/pages/shop.html" class="hover:text-gold transition-colors">Shop</a></li>
+                    <li><a href="/src/pages/about.html" class="hover:text-gold transition-colors">About Us</a></li>
+                    <li><a href="/src/pages/contact.html" class="hover:text-gold transition-colors">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h4 class="text-neutral-900 font-bold uppercase tracking-widest mb-6">Contact</h4>
+                <ul class="space-y-4 text-sm text-neutral-600">
+                    <li class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-4 h-4 text-gold">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                        </svg>
+                        <span>123 Luxury Ave, NY 10001</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-4 h-4 text-gold">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                        </svg>
+                        <span>support@timestotrend.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Social -->
+            <div>
+                <h4 class="text-neutral-900 font-bold uppercase tracking-widest mb-6">Social</h4>
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-neutral-500 hover:border-gold hover:bg-gold hover:text-white transition-all duration-300">
+                        <span class="sr-only">Instagram</span>
+                        <svg class="size-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772 4.902 4.902 0 011.772-1.153c.636-.247 1.363-.416 2.427-.465C9.673 2.013 10.03 2 12.48 2h-.165zm-2.343 5.392a1.998 1.998 0 00-2.623 2.624c.057.295.148.577.266.836l-2.008 2.009a4.826 4.826 0 01-.266-.836 4.832 4.832 0 012.63-5.632 4.809 4.809 0 011.994-.436h.007zm3.626-1.808a2.536 2.536 0 00-2.536 2.536 2.536 2.536 0 002.536 2.536 2.536 2.536 0 00-2.536-2.536 2.536 2.536 0 00-2.536-2.536zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-neutral-500 hover:border-gold hover:bg-gold hover:text-white transition-all duration-300">
+                        <span class="sr-only">Facebook</span>
+                        <svg class="size-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-200 pt-8 text-center">
+            <p class="text-xs text-neutral-400 uppercase tracking-widest">&copy; 2025 Times To Trend. All rights
+                reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/scripts/main.js"></script>
+</body>
+
+</html>
